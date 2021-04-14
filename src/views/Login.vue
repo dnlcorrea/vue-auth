@@ -41,9 +41,6 @@
                  localStorage.setItem('token', data.access_token);
                  this.$router.push({name: 'gerentes'})
              })
-             .catch(error => {
-                console.log(error)
-             })
           }
        },
     }

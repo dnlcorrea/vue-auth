@@ -36,16 +36,11 @@
         methods: {
             submit() {
                 this.$http.post('http://localhost:8000/auth/register', this.usuario)
-                    .then(response => {
-                        console.log(response)
-                        this.$router.push({name: 'login'})
-                    })
-                    .catch(error => {
-                        console.log(error)
-                    });
-            }
+                    .then(() => { this.$router.push({name: 'login'}) })
+            
         },
     }
+}
 </script>
 
 <style scoped>

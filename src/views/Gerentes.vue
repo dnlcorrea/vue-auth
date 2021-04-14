@@ -23,7 +23,6 @@
         mounted() {
             this.$http.get('gerentes')
                 .then(({data}) => this.gerentes = data)
-                .catch(error => console.log(error));
         }
     }
 </script>
